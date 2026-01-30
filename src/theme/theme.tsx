@@ -33,9 +33,10 @@ export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
 
 export const useTheme = () => {
   const context = useContext(ThemeContext);
-  if (context) {
-    return context;
+  if (!context) {
+    throw new Error("Error");
   }
+  return context;
 };
 
 export default ThemeContext;

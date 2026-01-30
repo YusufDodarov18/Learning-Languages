@@ -9,7 +9,7 @@ function BallBox({ total, status }: BallBoxProps) {
           className="border-2 border-cyan-700 w-20 h-5 rounded-lg"
           style={{
             backgroundColor:
-              status[i] == undefined
+              !status || status[i] === undefined
                 ? "transparent"
                 : status[i]
                   ? "oklch(72.3% 0.219 149.579)"

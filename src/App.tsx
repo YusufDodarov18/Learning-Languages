@@ -5,7 +5,7 @@ import Exercises from "./components/Exercises";
 
 function App() {
   return (
-    <div className="pt-10">
+    <div className="pt-10 pb-20">
       <Header />
       <Routes>
         <Route path="*" element={<Home />} />

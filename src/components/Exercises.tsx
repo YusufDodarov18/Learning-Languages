@@ -8,7 +8,7 @@ import type { resultType, testItem } from "../type";
 import { useSearchParams } from "react-router-dom";
 
 export default function Exercises() {
-  const { theme, toggleTheme } = useTheme();
+  const { theme } = useTheme();
   const [showTenExercise, setShowTenExercise] = useState<boolean>(false);
   const [showTwentyExercise, setShowTwentyExercise] = useState<boolean>(false);
   const [showInfinityExercise, setShowInfinityExercise] =

@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import Button from "./Button";
 
 const Home = () => {
-  const { theme, toggleTheme } = useTheme();
+  const { theme } = useTheme();
   return (
     <div>
       <section className="flex flex-col justify-center items-center text-center gap-4 pt-16 md:pt-24 lg:pt-32 px-4 md:px-8">
